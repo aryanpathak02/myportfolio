@@ -1,0 +1,65 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #8b5cf6, #d946ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.invert-image {
+    filter: invert(1);
+}
+
+
+/* style for loading section  */
+.box {
+    display: flex;
+    animation: 6s infinite rotate;
+}
+
+.bar {
+    height: 50px;
+    width: 20px;
+}
+
+#a2 {
+    height: 0;
+    background: #6c5cd1;
+    animation: 2s infinite anim;
+}
+
+#a1 {
+    height: 0;
+    background: #7d6ae9;
+    animation: 2.9s infinite anim;
+}
+
+@keyframes anim {
+    0% {
+        height: 2px;
+    }
+
+    50% {
+        height: 50px;
+    }
+
+    99% {
+        height: 2px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(359deg);
+    }
+
+    99% {
+        transform: rotate(0deg);
+    }
+}

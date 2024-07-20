@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan's Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="flex items-center flex-col scroll-smooth relative">
+    <!-- loading secion is here  -->
+
+    <div id="feedback" class="fixed hidden inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+        <div class="flex flex-col items-center ">
+            <div class="box">
+                <div class="bar" id="a1"></div>
+                <div class="bar" id="a2"></div>
+            </div>
+            <p class="mt-2 font-medium text-white">Sending</p>
+        </div>
+    </div>
+    <!-- navbar section start's from here  -->
+    <nav
+        class="lg:flex items-center justify-between px-6 sm:px-10 pt-3 pb-2 min-[2400px]:w-3/4  sticky xl:fixed top-0 w-full bg-white min-[1900px]:px-96 mx-auto z-50">
+        <div class="flex items-center justify-between ">
+            <img class="invert-image w-44 sm:w-60" src="images/signature.png" alt="logo">
+            <i id="hamburgur_btn" class="fa-solid fa-bars text-2xl cursor-pointer lg:hidden   rounded-full"></i>
+        </div>
+        <ul id="list"
+            class="hidden gap-x-4 max-md:font-medium md:text-lg lg:flex flex-col max-md:w-full  rounded-xl max-md:bg-gray-50 lg:flex-row max-lg:p-4 min-[2000px]:text-xl">
+            <a href="#home">
+                <li class="max-md:w-full max-md:pl-2 hover:bg-gray-100 rounded-lg py-1 cursor-pointer px-3 my-1 list  ">
+                    Home</li>
+            </a>
+            <a href="#about">
+                <li class="max-md:w-full max-md:pl-2 hover:bg-gray-100 rounded-lg py-1 cursor-pointer px-3 my-1 list">
+                    About me</li>
+            </a>
+            <a href="#experiences">
+                <li class="max-md:w-full max-md:pl-2 hover:bg-gray-100 rounded-lg py-1 cursor-pointer px-3 my-1 list">
+                    Experience</li>
+            </a>
+            <a href="#work">
+                <li class="max-md:w-full max-md:pl-2 hover:bg-gray-100 rounded-lg py-1 cursor-pointer px-3 my-1 list">My
+                    Projects</li>
+            </a>
+            <a href="#contact">
+                <li class="max-md:w-full max-md:pl-2 hover:bg-gray-100 rounded-lg py-1 cursor-pointer px-3 my-1 list">
+                    Contact me</li>
+            </a>
+        </ul>
+    </nav>
+    <!-- navbar section end's from here  -->
+
+    <!-- hero section starts from here  -->
+    <section id="home"
+        class="grid sm:grid-cols-2 md:w-[90%] min-[1900px]:h-auto min-[1900px]:w-3/4 min-[1900px]:p-20 max-xl:py-10 min-[2400px]:w-1/2 mx-auto justify-between items-center xl:h-[100vh] max-lg:p-6">
+        <div class="flex items-start justify-start flex-col md:pl-20">
+            <p class="my-6 text-lg font-bold 2xl:text-xl">Hi, I'm Aryan Pathak</p>
+            <p class="text-3xl xl:text-6xl font-bold">I'm <span class="gradient-text">Full-Stack</span> Developer.</p>
+            <p class="text-lg my-4 sm:my-6 min-[2000px]:text-xl">I am a full-stack developer. I can provide clean code
+                and pixel perfect
+                design.</p>
+            <a href="./Aryan 's Resume.pdf" target="_blank"
+                class="mb-6 mt-2 bg-[#7d6ae9] px-6 py-2 rounded-lg hover:opacity-75 text-white min-[1900px]:text-xl">Resume</a>
+        </div>
+        <div class="flex items-center justify-center">
+            <img class="w-full" src="./images/hero_img.gif" alt="hero_image">
+        </div>
+    </section>
+    <!-- hero sectoins end here  -->
+    <!-- about section start from here  -->
+    <section id="about" class="bg-gray-100  w-full">
+        <div
+            class="grid lg:grid-cols-2 justify-center items-center xl:h-[100dvh] min-[1900px]:h-auto min-[1900px]:w-3/4  min-[1900px]:p-20 min-[2400px]:w-1/2 sm:w-[90%] mx-auto">
+            <div class="flex items-center justify-center mb-4 lg:order-1 order-2">
+                <img class="w-3/4 rounded-full py-6 my-4 sm:py-14  bg-white  " src="images/character-1.gif"
+                    alt="user_images">
+            </div>
+            <div class="bg-gray-100 max-sm:p-4 max-xl:p-10  text-gray-700 lg:order-2 order-1">
+                <h2 class="font-bold text-lg text-black 2xl:text-2xl">About me</h2>
+                <p class="text-2xl lg:text-4xl my-6 font-bold text-black">Who's <span class="gradient-text">Aryan</span>
+                    ?</p>
+                <p class="lg:my-10 lg:w-[85%] max-sm:text-sm text-lg 2xl:text-xl"> I'm Aryan Pathak, a budding web
+                    developer, I am
+                    passionate
+                    about crafting engaging
+                    and user-friendly websites. With a solid foundation in front-end technologies and a hunger for
+                    learning,
+                    I am eager to contribute my skills to create impactful online experiences and grow as a professional
+                    in
+                    the industry.
+                </p>
+                <div>
+                    <p class="font-bold text-lg text-black mt-6 mb-2 2xl:text-2xl">My Skills</p>
+                    <p
+                        class="px-6 inline-block rounded-lg py-2 shadow-2xl bg-white m-1 max-sm:text-sm min-[1900px]:text-xl">
+                        HTML</p>
+                    <p
+                        class="px-6 inline-block rounded-lg py-2 shadow-2xl bg-white m-1 max-sm:text-sm min-[1900px]:text-xl">
+                        CSS</p>
+                    <p
+                        class="px-6 inline-block rounded-lg py-2 shadow-2xl bg-white m-1 max-sm:text-sm min-[1900px]:text-xl">
+                        Javascript</p>
+                    <p
+                        class="px-6 inline-block rounded-lg py-2 shadow-2xl bg-white m-1 max-sm:text-sm min-[1900px]:text-xl">
+                        Tailwindcss</p>
+                    <p
+                        class="px-6 inline-block rounded-lg py-2 shadow-2xl bg-white m-1 max-sm:text-sm min-[1900px]:text-xl">
+                        Nodejs</p>
+                    <p
+                        class="px-6 inline-block rounded-lg py-2 shadow-2xl bg-white m-1 max-sm:text-sm min-[1900px]:text-xl">
+                        Mongodb</p>
+                    <p
+                        class="px-6 inline-block rounded-lg py-2 shadow-2xl bg-white m-1 max-sm:text-sm min-[1900px]:text-xl">
+                        Git</p>
+                    <p
+                        class="px-6 inline-block rounded-lg py-2 shadow-2xl bg-white m-1 max-sm:text-sm min-[1900px]:text-xl">
+                        Git Hub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end 's  here  -->
+    <!-- education and experiences section start from here  -->
+    <section id="experiences" class="lg:px-8">
+        <div
+            class="xl:w-[90%]  max-sm:mx-2 xl:h-[100dvh]  min-[1900px]:h-auto min-[1900px]:w-3/4 min-[1900px]:p-20 min-[2400px]:w-1/2 mx-auto py-6 flex items-start justify-center flex-col text-gray-500 max-sm:text-sm ">
+            <p class="font-medium pl-5 text-black sm:text-lg 2xl:text-xl">My creative Journey</p>
+            <p class="text-3xl sm:text-4xl mt-4 md:mb-6 pl-5 font-bold text-black">My <span class="gradient-text">CV
+                    Resume</span></p>
+            <section class="grid lg:grid-cols-2 w-full min-[2000px]:text-xl">
+                <div class="lg:px-10 lg:py-4 p-4 ">
+                    <p class="mb-10 text-xl lg:text-3xl font-bold text-black">EDUCATION</p>
+                    <div class="flex gap-x-4 lg:gap-x-10 w-full ">
+                        <div class="border border-black w-0 relative">
+                            <div
+                                class="h-4 top-6 w-4 bg-purple-400 border-2 border-black absolute rounded-full transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                        </div>
+                        <div
+                            class="border-2 p-5 sm:px-6 sm:pt-6 sm:pb-8 rounded-xl mb-6 w-full shadow-xl hover:scale-105 transition-transform  cursor-pointer">
+                            <h4 class="relative font-medium text-purple-400">2021 - 2025</h4>
+                            <h3 class="mt-2 mb-1 md:text-lg font-semibold text-gray-700">B TECH IN COMPUTER ENGINEERING
+                            </h3>
+                            <p class="text-gray-600 ">Silver Oak University, Ahmedabad</p>
+                            <p class="text-gray-600">SPI : 9.06</p>
+
+                        </div>
+                    </div>
+                    <div class="flex gap-x-4 lg:gap-x-10 w-full ">
+                        <div class="border border-black  w-0 relative">
+                            <div
+                                class="h-4 top-6 w-4 bg-white border-2 border-black absolute rounded-full transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                        </div>
+                        <div
+                            class="border-2 p-5 sm:px-6 sm:pt-6 sm:pb-8 rounded-xl mb-2 w-full shadow-2xl  hover:scale-105 cursor-pointer transition-transform  ">
+                            <h4 class="relative text-purple-400 font-medium">2020 - 2021</h4>
+                            <h3 class="mt-2 mb-1 md:text-lg font-semibold text-gray-700">12TH (CBSE)</h3>
+                            <p class="text-gray-600">Fellowship Mission School , Vapi</p>
+                            <p class="text-gray-600">Percentage : 81%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:px-10 lg:py-4 p-4 max-sm:mt-8">
+                    <p class="mb-10 text-xl  lg:text-3xl font-bold text-black">EXPERIENCE</p>
+
+                    <div class="flex gap-x-4 lg:gap-x-10 w-full ">
+
+                        <div class="border border-black w-0 relative">
+                            <div
+                                class="h-4 top-6 w-4 bg-purple-400 border-2 border-black absolute rounded-full transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                        </div>
+                        <div
+                            class="border-2 p-5 sm:px-6 sm:pt-6 sm:pb-8 rounded-xl w-full shadow-2xl hover:scale-105 cursor-pointer transition-transform ">
+                            <h4 class="relative text-purple-400 font-medium">Aug 2023 - April 2024</h4>
+                            <h3 class="mt-2 mb-1 md:text-lg font-semibold text-gray-700">Frontend Developer
+                                Intern, Sedani Digital</h3>
+                            <ul class="list-disc pl-4">
+                                <li>Developed frontend solutions using HTML, CSS,
+                                    JavaScript, Tailwind CSS, and Socket.IO for realtime chat functionality in ERP
+                                    systems.</li>
+                                <li>
+                                    Designed and implemented frontend for B2B
+                                    websites, ensuring responsive and intuitive user
+                                    interfaces.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </section>
+    <!-- education and experiences section end's  from here  -->
+
+    <!-- my work showing section start from here  -->
+    <section id="work" class="bg-gray-100 w-full md:px-8">
+        <div
+            class="xl:w-[90%] max-sm:mx-2 xl:h-[100dvh] min-[1900px]:h-auto min-[1900px]:w-3/4 min-[1900px]:p-20 min-[2400px]:w-1/2 mx-auto py-6 flex items-start justify-center flex-col text-gray-500 ">
+            <p class="font-medium pl-5 text-black sm:text-lg">See My Profile</p>
+            <p class="text-3xl sm:text-4xl mt-4 mb-8 pl-5 font-bold text-black">My <span class="gradient-text">Amazing
+                    Work</span></p>
+            <section class="grid sm:grid-cols-3 grid-col-1 items-start max-lg:text-sm xl:text-lg min-[2000px]:text-xl ">
+                <div class="max-sm:mx-2 sm:p-2 flex items-center justify-center flex-col max-md:my-2 ">
+                    <img class="w-80 object-contain" src="images/lap.png" alt="project-1">
+                    <div class="p-2 lg:p-4">
+                        <p class="font-bold lg:text-lg 2xl:text-xl text-black mb-4">WONDERLUST DYNAMIC WEBSITE
+                            DEVELOPMENT</p>
+                        <p class="text-gray-700  mb-4 ">Developed a dynamic website utilizing HTML, CSS, JavaScript,
+                            Node.js, Express, MongoDB, and integrated an interactive map
+                            for enhanced user engagement.</p>
+                        <a href="https://wanderlust-njb4.onrender.com/listings" target="_blank"
+                            class="text-[#7d6ae9] hover:underline mt-2 inline-block">See Project</a>
+                    </div>
+                </div>
+
+                <div class="max-sm:mx-2  sm:p-2 flex items-center justify-center flex-col max-md:my-2 ">
+                    <img class="w-80  object-contain" src="images/lap3.png" alt="project-1">
+                    <div class="p-2 lg:p-4">
+                        <p class="font-bold lg:text-lg  2xl:text-xl text-black mb-4">DEVELOPED A AMAZONE SINGLE PAGE
+                            CLONE</p>
+                        <p class="text-gray-700  mb-4 ">Created an Amazon clone single page with HTML and CSS:
+                            Use HTML structure for layot,CSS for styling and replicate
+                            Amzone 's design element.</p>
+                        <a href="https://amazonebyaryan.netlify.app/" target="_blank"
+                            class="text-[#7d6ae9] hover:underline mt-2 inline-block">See Project</a>
+                    </div>
+                </div>
+                <div class="max-sm:mx-2  sm:p-2 flex items-center justify-center flex-col max-md:my-2 ">
+                    <img class="w-80  object-contain" src="images/lap2.png" alt="project-1">
+                    <div class="p-2 lg:p-4">
+                        <p class="font-bold lg:text-lg 2xl:text-xl text-black mb-4">DEVELOPED A SPOTIFY SINGLE PAGE
+                            CLONE</p>
+                        <p class="text-gray-700  mb-4 ">I have built a responsive spotify website using HTML and CSS to
+                            showcase projects and skills creatively and
+                            elegantly.</p>
+                        <a href="https://spotifybyaryan.netlify.app/" target="_blank"
+                            class="text-[#7d6ae9] hover:underline mt-2 inline-block">See Project</a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </section>
+    <!-- my work showing section end ' s from here  -->
+    <!-- form section where you can contact me  start 's here  -->
+    <section id="contact" class="bg-[url('./images/bg-1.jpg')] w-full">
+        <div
+            class="xl:h-[100dvh] xl:w-[90%] mx-auto p-4 sm:p-6 flex items-center justify-center flex-col min-[1900px]:h-auto min-[1900px]:w-3/4 min-[1900px]:p-20 min-[2400px]:w-1/2">
+            <p class="mt-2 font-medium mb-4 text-lg  2xl:text-xl">Get in Touch</p>
+            <h2 class="text-4xl mb-4 sm:mb-8 font-bold">Contact <span class="gradient-text">Me</span></h2>
+            <div
+                class="w-full sm:w-3/4 lg:w-[60%] px-4 py-6 sm:p-6 sm:px-8 sm:py-10 sm:px-14 rounded-xl shadow-2xl bg-white max-lg:mb-6">
+                <form id="myForm">
+                    <div class="mb-6">
+                        <label for="name" class="block my-1 ml-1 font-medium ">Name</label>
+                        <input type="text" id="name" name="user[name]"
+                            class="bg-gray-100 text-black rounded-lg w-full p-2 focus:outline-none"
+                            placeholder="Enter You Name" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block my-1 ml-1 font-medium ">Email</label>
+                        <input type="email" id="email" name="user[email]"
+                            class="bg-gray-100 text-black rounded-lg w-full p-2 focus:outline-none "
+                            placeholder="Enter You Email" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="comment" class="block my-1 ml-1 font-medium ">Comment</label>
+                        <textarea name="user[comment]" id="comment" placeholder="Text your message"
+                            class="bg-gray-100 text-black rounded-lg w-full p-2 focus:outline-none" required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="text-white rounded-lg bg-[#7d6ae9] hover:opacity-75 py-2 px-4 min-[1900px]:text-xl">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- form section where you can contact me  end 's here  -->
+
+    <!-- footer section start 's from here  -->
+    <footer class="bg-[#7d6ae9] text-white flex items-center flex-col w-full max-sm:pt-8  max-sm:text-sm">
+        <div class="flex gap-x-20 flex-col lg:flex-row items-center mx-auto p-6 sm:my-14">
+            <img class="max-sm:w-60 w-80 object-cover mb-6" src="./images/signature.png" alt="logo">
+            <div>
+                <p class="text-2xl uppercase font-bold mb-5">Reach out</p>
+                <div class="flex items-center justify-center gap-x-3 min-[2000px]:text-xl">
+                    <i class="fa-solid fa-envelope "></i>
+                    <p class="my-3">aaryanpathak02@gmail.com</p>
+                </div>
+                <div class="flex items-center gap-x-3 min-[2000px]:text-xl"><i class="fa-solid fa-phone"></i>
+                    <p>8160341790</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-center max-sm:text-sm pb-8 px-6  min-[2000px]:text-xl">Copyright &copy; 2024 All rights reserved | This website
+            is made with <i class="fa-solid fa-heart"></i> by <span class="font-bold">Aryan Pathak</span></p>
+    </footer>
+    <!-- footer section end 's from here  -->
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
